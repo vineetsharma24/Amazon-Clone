@@ -10,6 +10,7 @@ import { getBasketTotal } from "./reducer";
 import axios from './axios';
 
 
+
 function Payment(event) {
     const [{ basket, user }, dispatch] = useStateValue();
     const history = useHistory();
@@ -52,7 +53,7 @@ function Payment(event) {
             setError(null)
             setProcessing(false)
 
-            history.replace('/orders')
+            //   history.replace('/orders')
         }
         )
 
@@ -125,14 +126,20 @@ function Payment(event) {
                                     thousandSeperator={true}
                                     prefix={"$"}
                                 />
-                                <button disabled={processing || disabled || succeeded}>
-                                    <span>
-                                        {
-                                            processing ? <p>Processing</p> : "Buy Now"
-                                        }
-                                    </span>
+                                <button onClick={e => history.push('/orders')}> Test Buy Now 'Stripe currently disabled'
+
 
                                 </button>
+                                {/*<button disabled={processing || disabled || succeeded}>
+                                    <span>
+                                        {
+                                            processing ? <p >Processing</p> : "Buy Now"
+
+                                        }
+
+                                    </span>
+
+                                </button> */}
                             </div>
                             {error && <div>{error}</div>}
                         </form>
