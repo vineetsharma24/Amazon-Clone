@@ -1,18 +1,20 @@
-# Getting Started with Create React App
+# React App :
 
-This project was bootstrapped with [Create React App]..
+Amazon Clone w/ Full E-Commerce functionality using React JS, Node JS, Stripe JS and Firebase by CleverProgrammer.
 
-## Available Scripts
+## Website :
 
-In the project directory, you can run:
+Check live deployed website : https://lnkd.in/djiCgXf 👈
+Prefer "laptop | Desktop mode on mobile"
+Test Key(Credit Card): 4242 4242 4242 4242 04 / 24 242 42424
 
-### `npm start`
+### Features :
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Material UI used for front-end.
+Firebase used for authentication, data storage and hosting.
+User authentication functionality implemented.
+Users can add products to cart, remove products from cart.
+Users can place order using credit card which is implemented with Stripe JS(Currently Disabled for this project).
 
 
 
